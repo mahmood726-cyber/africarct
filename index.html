@@ -1,0 +1,1674 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AfricaRCT Observatory: Multi-Dimensional Inequity Audit of African Clinical Trial Distribution
+TYPE: methods  |  ESTIMAND: Clinical Coverage Index
+DATA: ClinicalTrials.gov API v2, interventional RCTs 2000-2026, Africa/Europe/China/India/South America
+PATH: C:\AfricaRCT
+
+CURRENT BODY (156 words):
+Can a reproducibility capsule turn an evidence-synthesis repository into a reviewer-auditable submission without restaging the workflow? We audited the shipped project using 271 source files, 0 test files, 74 manuscript or guide files, and 136 dashboard or figure assets committed locally. The capsule packages a micro-paper, a machine-readable config, an interactive reader, and a protocol so the repository can be inspected across reviewers. Across the inventory, the repository yields a documentation proportion of 0.15, with file-count range 0-271 across core surfaces, while exposing 76 entry points and 0 declared dependencies. Git metadata, file counts, and copied assets provide a stable local audit trail even when engine outputs remain outside the submission bundle. This packaging step converts a diffuse codebase into a citable, inspectable micro-publication suitable for rapid editorial triage and downstream peer review. The capsule does not verify scientific correctness itself; it standardizes what reviewers receive first, and deeper validation still depends on tests and manuscripts.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+How inequitably are clinical trials distributed across Africa relative to its disease burden and population share? We queried the ClinicalTrials.gov API v2 for all registered interventional RCTs from 2000 to 2026 covering Africa, Europe, China, India, and South America. A 57-dimension audit applied economic indices including Gini and Herfindahl, network entropy, Benford digit screening, and methodological rigor lenses to trial metadata across therapeutic areas. The Clinical Coverage Index for mental health was 15.0 (95% CI 12.1 to 18.3) and secondary care delivery reached 48.6, indicating Africa hosts a fraction of the trials its burden warrants. Per-country aggregation revealed that continent-level API queries undercount African trials by approximately twofold compared with summing individual nation results. Multi-dimensional inequity auditing exposes structural gaps in trial distribution invisible to simple count comparisons. The analysis relies on ClinicalTrials.gov metadata only and cannot capture trials registered solely in WHO ICTRP partner registries.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/AfricaRCT
+  Protocol:  https://github.com/mahmood726-cyber/AfricaRCT/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/AfricaRCT/
+
+References (topic pack: CT.gov / ClinicalTrials.gov audit):
+  1. Zarin DA, Tse T, Williams RJ, Rajakannan T. 2017. Update on trial registration 11 years after the ICMJE policy was established. N Engl J Med. 376(4):383-391. doi:10.1056/NEJMsr1601330
+  2. Anderson ML, Chiswell K, Peterson ED, Tasneem A, Topping J, Califf RM. 2015. Compliance with results reporting at ClinicalTrials.gov. N Engl J Med. 372(11):1031-1039. doi:10.1056/NEJMsa1409364
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[6/485] AlMizan
+TITLE: Al-Mizan: An Evidence Equipoise Monitor for Detecting When the Balance of Evidence Has Tipped
+TYPE: methods  |  ESTIMAND: Cumulative Z-statistic crossing Trial Sequential Analysis boundary
+DATA: Three clinical exemplars: corticosteroids in TBI, tranexamic acid, intensive glucose control
+PATH: C:\AlMizan
+
+CURRENT BODY (156 words):
+When has accumulating trial evidence already answered a clinical question, and how many participants were subsequently enrolled after equipoise had ended? We built an evidence equipoise monitor combining cumulative meta-analysis, Trial Sequential Analysis boundaries, leave-one-out fragility checks, and post-tipping waste estimates across three clinical exemplars. Al-Mizan applies O'Brien-Fleming alpha-spending boundaries to the cumulative Z-statistic at each chronological study entry and classifies the evidence state as tipped, trending, or in equipoise. In corticosteroids for traumatic brain injury, the boundary was not crossed before CRASH, which randomised 10,008 patients and shifted the pooled estimate to a risk ratio of 1.05 (95% CI 1.01 to 1.10). Leave-one-out analyses showed that the corticosteroid and tranexamic acid exemplars were not reversed by removal of any single study. Real-time evidence monitoring could reduce avoidable recruitment into trials that continue after the question has been answered. The approach depends on published evidence and cannot account for unpublished negative studies or delayed data release.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+When has accumulating trial evidence already answered a clinical question, and how many participants were subsequently enrolled after equipoise had ended? We built an evidence equipoise monitor combining cumulative meta-analysis, Trial Sequential Analysis boundaries, leave-one-out fragility checks, and post-tipping waste estimates across three examples; al-Mizan applies O'Brien-Fleming alpha-spending boundaries to the cumulative Z-statistic at each chronological study entry. It classifies the evidence state as tipped, trending, or in equipoise, in corticosteroids for traumatic brain injury, the boundary was not crossed before CRASH. This trial which randomised 10,008 patients and shifted the pooled estimate to a risk ratio of 1.05 (95% CI 1.01 to 1.10). Leave-one-out analyses showed that the corticosteroid and tranexamic acid are not reversed by removal of any single study. Real-time evidence monitoring may be able to reduce avoidable recruitment into trials that continue after the question has been answered. The approach however cannot account for unpublished negative studies or delayed data release.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/al-mizan
+  Protocol:  https://github.com/mahmood726-cyber/al-mizan/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/al-mizan/
+
+References (topic pack: trial sequential analysis (TSA)):
+  1. Wetterslev J, Thorlund K, Brok J, Gluud C. 2008. Trial sequential analysis may establish when firm evidence is reached in cumulative meta-analysis. J Clin Epidemiol. 61(1):64-75. doi:10.1016/j.jclinepi.2007.03.013
+  2. Pogue JM, Yusuf S. 1997. Cumulating evidence from randomized trials: utilizing sequential monitoring boundaries for cumulative meta-analysis. Control Clin Trials. 18(6):580-593. doi:10.1016/S0197-2456(97)00051-2
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[7/485] Asa
+TITLE: Asa: A Seven-Method Forensic Data Integrity Screener for Clinical Trial Datasets
+TYPE: methods  |  ESTIMAND: Composite forensic integrity score (0-100)
+DATA: 85 test cases: fabricated, genuine, and boundary-condition datasets
+PATH: C:\Models\Asa
+
+CURRENT BODY (156 words):
+Can statistical forensic methods reliably detect data fabrication in clinical trial datasets through a single accessible browser-based screening tool? We consolidated seven complementary forensic methods into a browser screener validated against 85 test cases covering fabricated, genuine, and boundary-condition datasets. Asa implements Benford’s law, GRIM and GRIMMER granularity tests, SPRITE stochastic reconstruction, terminal digit analysis, variance ratio tests, and Kolmogorov-Smirnov distribution assessment, each producing an independent risk score from zero to one hundred. The composite integrity score achieved sensitivity and specificity of 100 percent (95% CI 95.7 to 100 percent) for fabrication detection across all 85 validation test cases in the suite. Per-study methods identified impossible mean-sample-size combinations in fabricated datasets, while dataset-level methods flagged distributional anomalies across broader study collections. A multi-method forensic approach substantially reduces false accusation risk compared with reliance on any single statistical test. The tool is limited to summary-level data and cannot detect sophisticated fabrication that preserves all tested statistical properties.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Our question was can statistical forensic methods reliably detect data fabrication in clinical trial datasets through A browser-based screening tool? We consolidated seven complementary forensic methods validated against 85 test cases, this covers fabricated, genuine, and boundary-condition datasets. Asa implements Benford’s law, GRIM and GRIMMER granularity tests, SPRITE stochastic reconstruction, terminal digit analysis, variance ratio tests, and Kolmogorov-Smirnov distribution assessment. Each of these produces an independent risk score from zero to one hundred, the composite integrity score achieved sensitivity and specificity of 100 percent (95% CI 95.7 to 100 percent). This is for fabrication detection across all 85 validation test cases in the suite; per-study methods identified impossible mean-sample-size combinations in fabricated datasets; dataset-level methods flagged distributional anomalies across broader study collections. A multi-method forensic approach reduces false accusation risk compared with reliance on any single statistical test. The tool is limited to summary-level data and cannot detect sophisticated fabrication.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Asa
+  Protocol:  https://github.com/mahmood726-cyber/Asa/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/Asa/
+
+References (topic pack: browser-based meta-analysis tooling):
+  1. Schwarzer G, Carpenter JR, Rücker G. 2015. Meta-Analysis with R. Springer. doi:10.1007/978-3-319-21416-0
+  2. Viechtbauer W. 2010. Conducting meta-analyses in R with the metafor package. J Stat Softw. 36(3):1-48. doi:10.18637/jss.v036.i03
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[9/485] AutoGRADE
+TITLE: AutoGRADE: Browser-Based Automated GRADE Certainty Assessment
+TYPE: methods  |  ESTIMAND: Risk ratio
+DATA: 15 published meta-analyses for validation
+PATH: C:\Projects\AutoGRADE
+
+CURRENT BODY (156 words):
+Can a fully offline, single-file browser application produce transparent and reproducible GRADE certainty assessments from meta-analysis results? We built AutoGRADE as a zero-dependency HTML tool accepting input from metafor, RevMan, or manual entry for up to seven clinical outcomes. The tool auto-computes inconsistency and imprecision using heterogeneity statistics and optimal information size, with guided assessments for risk of bias, indirectness, and publication bias. Across 15 published meta-analyses the tool produced risk ratio assessments matching expert GRADE ratings in 93 percent of domain judgments (95% CI 87-97), generating tables in under two minutes. Automated scores agreed with Cochrane GRADEpro ratings across all five domains, with discrepancies only in borderline indirectness where expert judgment inherently varies. Instant transparent GRADE tables without installation or internet lower the barrier for systematic reviewers adopting rigorous certainty assessment in practice. The tool cannot replace expert clinical judgment for indirectness and remains limited to pairwise outcomes without support for network or diagnostic evidence.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can a single-file browser application produce transparent and reproducible GRADE certainty assessments from meta-analysis results? AutoGRADE is a zero-dependency HTML tool accepting input from metafor, RevMan, or manual entry for up to seven clinical outcomes. This auto-computes inconsistency and imprecision using heterogeneity statistics and optimal information size, there are guided assessments for risk of bias, indirectness, and publication bias. Across 15 published meta-analyses the tool produced risk ratio assessments which matched expert GRADE ratings in 93 percent of domain judgments (95% CI 87-97). Automated scores agreed with Cochrane GRADEpro ratings across all five domains (with discrepancies only in borderline indirectness where expert judgment inherently varies). Instant transparent GRADE tables lower the barrier for systematic reviewers adopting rigorous certainty assessment in practice. The tool cannot replace expert clinical judgment for indirectness and remains limited to pairwise outcomes.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/AutoGRADE
+  Protocol:  https://github.com/mahmood726-cyber/AutoGRADE/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/AutoGRADE/
+
+References (topic pack: GRADE / certainty rating):
+  1. Guyatt GH, Oxman AD, Vist GE, et al. 2008. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. BMJ. 336(7650):924-926. doi:10.1136/bmj.39489.470347.AD
+  2. Schünemann HJ, Cuello C, Akl EA, et al. 2019. GRADE guidelines: 18. How ROBINS-I and other tools to assess risk of bias in nonrandomized studies should be used to rate the certainty of a body of evidence. J Clin Epidemiol. 111:105-114. doi:10.1016/j.jclinepi.2018.01.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[10/485] BayesianMA
+TITLE: BayesianMA: Browser-Based Bayesian Random-Effects Meta-Analysis with Prior Sensitivity Analysis
+TYPE: methods  |  ESTIMAND: Posterior mean and 95% credible interval
+DATA: Magnesium-for-MI (8 trials) and Aspirin-for-stroke (6 trials) datasets
+PATH: C:\Models\BayesianMA
+
+CURRENT BODY (156 words):
+Can Bayesian random-effects meta-analysis with prior sensitivity analysis be performed entirely in a browser without requiring R, Stan, or specialized installation? The tool implements a normal-normal hierarchical model and was validated on two canonical datasets: eight magnesium-for-MI trials and six aspirin-for-stroke-prevention trials. Posterior computation uses grid approximation over a 200-by-200 mu-tau grid with a normal prior for the grand mean and half-Cauchy prior for heterogeneity. For the magnesium dataset the posterior log-OR mean was -0.53 (95% credible interval -1.27 to 0.13) under a weakly informative prior with half-Cauchy 0.5. Sensitivity analysis across vague, weakly informative, and skeptical priors showed that posterior means varied by less than 0.15 while credible interval widths changed by up to 40%. The tool enables clinicians to quantify the influence of prior assumptions on pooled conclusions through direct probability statements rather than p-values. Grid approximation is limited to two-parameter models and may not scale to complex hierarchical structures with additional random-effect layers.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can Bayesian random-effects meta-analysis with prior sensitivity analysis be done in a browser without requiring R, Stan, or specialized installation? This tool implements a normal-normal hierarchical model, it was validated on two canonical datasets: eight magnesium-for-MI trials and six aspirin-for-stroke-prevention trials. The Posterior computation uses grid approximation over a 200-by-200 mu-tau grid with a normal prior for the grand mean and half-Cauchy prior for heterogeneity. Using the magnesium dataset the posterior log-OR mean was -0.53 (95% credible interval -1.27 to 0.13) under a weakly informative prior with half-Cauchy 0.5. Our Sensitivity analysis across vague, weakly informative, and skeptical priors showed that posterior means varied by less than 0.15 (while credible interval widths changed by up to 40%). The tool enables clinicians to quantify the influence of prior assumptions on pooled conclusions, this is through direct probability statements rather than p-values. Grid approximation, however, is limited to two-parameter models and may not scale to complex hierarchical structures.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BayesianMA
+  Protocol:  https://github.com/mahmood726-cyber/BayesianMA/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BayesianMA/
+
+References (topic pack: Bayesian meta-analysis):
+  1. Röver C. 2020. Bayesian random-effects meta-analysis using the bayesmeta R package. J Stat Softw. 93(6):1-51. doi:10.18637/jss.v093.i06
+  2. Higgins JPT, Thompson SG, Spiegelhalter DJ. 2009. A re-evaluation of random-effects meta-analysis. J R Stat Soc A. 172(1):137-159. doi:10.1111/j.1467-985X.2008.00552.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[11/485] BenfordMA
+TITLE: Benford Screening of 1.2 Million Meta-Analytic Values Finds No Corpus-Level Digit Anomaly
+TYPE: methods  |  ESTIMAND: Mean absolute deviation (MAD)
+DATA: Pairwise70 specification-level data (403 reviews, 1.18M values)
+PATH: C:\BenfordMA
+
+CURRENT BODY (156 words):
+Do the numerical outputs of large-scale meta-analytic workflows follow the digit patterns expected under Benford's law, or do they show overall corpus-level anomalies that might suggest data integrity concerns? We extracted first and second significant digits from 1,175,056 values across six numeric fields in 403 Cochrane review specifications from the Pairwise70 corpus. Digit frequencies were compared with Benford expectations using mean absolute deviation, chi-squared goodness-of-fit testing, and mantissa arc uniformity analysis applied to each field separately. The corpus-level first-digit mean absolute deviation was 0.013 (95% CI 0.011 to 0.015), remaining within accepted conformity thresholds despite the very large sample size. Sensitivity analyses across numeric fields and review subgroups showed consistent conformity, and no single review exceeded the critical non-conformance threshold after Bonferroni correction. At corpus level, these Cochrane outputs do not show digit anomalies suggesting systematic fabrication or major computational distortion. Benford screening remains indirect and cannot detect fabrication strategies that deliberately preserve expected digit frequencies.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Do the numerical outputs of large-scale meta-analytic workflows follow digit patterns expected under Benford's law. Do they show overall corpus-level anomalies that might suggest data integrity concerns? We extracted the first and second significant digits from 1,175,056 values across six numeric fields in 403 Cochrane review specifications (from the Pairwise70 corpus). Digit frequencies were compared with Benford expectations using mean absolute deviation. chi-squared goodness-of-fit testing, and mantissa arc uniformity analysis applied to each field separately. The corpus-level first-digit mean absolute deviation was 0.013 (95% CI 0.011 to 0.015), this remained within accepted conformity thresholds despite the large sample size; sensitivity analyses across numeric fields and review subgroups showed consistent conformity. No single review exceeded the critical non-conformance threshold after Bonferroni correction, these Cochrane outputs do not show digit anomalies suggesting systematic fabrication. Benford screening remains indirect and cannot detect all fabrication strategies.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BenfordMA
+  Protocol:  https://github.com/mahmood726-cyber/BenfordMA/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BenfordMA/
+
+References (topic pack: heterogeneity / prediction interval):
+  1. Higgins JPT, Thompson SG. 2002. Quantifying heterogeneity in a meta-analysis. Stat Med. 21(11):1539-1558. doi:10.1002/sim.1186
+  2. IntHout J, Ioannidis JP, Rovers MM, Goeman JJ. 2016. Plea for routinely presenting prediction intervals in meta-analysis. BMJ Open. 6(7):e010247. doi:10.1136/bmjopen-2015-010247
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[12/485] BiasForensics
+TITLE: The Bias Fingerprint: Eight Methods Disagree in One of Seven Cochrane Meta-Analyses
+TYPE: methods  |  ESTIMAND: Discordance rate
+DATA: Pairwise70 dataset (307 Cochrane reviews, k>=5)
+PATH: C:\BiasForensics
+
+CURRENT BODY (156 words):
+When eight publication-bias methods are applied to the same meta-analysis, how often do they reach the same conclusion? We applied four detection tests and four correction methods to 307 Cochrane reviews with at least five studies from the Pairwise70 dataset. Each review received a bias fingerprint summarising which tests flagged bias and how corrections shifted the pooled estimate, classified as Clean, Suspected, Confirmed, or Discordant. Only 54 reviews (17.6%) were Clean while 42 were Discordant, giving a discordance rate of 13.7% and a median risk-ratio shift below 0.05 (95% CI 0.02 to 0.08). Agreement ranged from 98% between PET-PEESE and limit meta-analysis to 73% between trim-and-fill and regression corrections, with mean relative effect shift of 1.01. In roughly one in seven Cochrane reviews, the apparent direction of the pooled conclusion depends on which bias method is chosen. These methods detect statistical asymmetry rather than bias itself and cannot separate publication bias from clinical or methodological heterogeneity.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+When eight publication-bias methods are applied to the same meta-analysis, do they reach the same conclusion? We applied four detection tests and four correction methods to 307 Cochrane reviews with at least five studies from the Pairwise70 dataset. Each review then received a bias fingerprint summarising which tests flagged bias and how corrections shifted the pooled estimate - classified as Clean, Suspected, Confirmed, or Discordant. Only 54 reviews (17.6%) were Clean but 42 were Discordant, this gave a discordance rate of 13.7% and a median risk-ratio shift below 0.05 (95% CI 0.02 to 0.08). Agreement ranged widely from 98% between PET-PEESE and limit meta-analysis to 73% between trim-and-fill and regression corrections, the mean relative effect shift was 1.01. In roughly one in seven reviews, the direction of the pooled conclusion depends on which bias method is chosen. These methods detect statistical asymmetry rather than bias itself not clinical or methodological heterogeneity.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BiasForensics
+  Protocol:  https://github.com/mahmood726-cyber/BiasForensics/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BiasForensics/
+
+References (topic pack: publication bias / selection):
+  1. Egger M, Davey Smith G, Schneider M, Minder C. 1997. Bias in meta-analysis detected by a simple, graphical test. BMJ. 315(7109):629-634. doi:10.1136/bmj.315.7109.629
+  2. Duval S, Tweedie R. 2000. Trim and fill: a simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics. 56(2):455-463. doi:10.1111/j.0006-341X.2000.00455.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[13/485] Burhan
+TITLE: TruthCert: A Fail-Closed Certification Protocol for LLM Outputs in Evidence Synthesis — E156 ◆ Synthēsis</title>
+<meta name="description" content="E156 micro-paper: AfricaRCT Observatory: Multi-Dimensional Inequity Audit of African Clinical Trial Distribution
+TYPE: methods  |  ESTIMAND: Clinical Coverage Index
+DATA: ClinicalTrials.gov API v2, interventional RCTs 2000-2026, Africa/Europe/China/India/South America
+PATH: C:\AfricaRCT
+
+CURRENT BODY (156 words):
+Can a reproducibility capsule turn an evidence-synthesis repository into a reviewer-auditable submission without restaging the workflow? We audited the shipped project using 271 source files, 0 test files, 74 manuscript or guide files, and 136 dashboard or figure assets committed locally. The capsule packages a micro-paper, a machine-readable config, an interactive reader, and a protocol so the repository can be inspected across reviewers. Across the inventory, the repository yields a documentation proportion of 0.15, with file-count range 0-271 across core surfaces, while exposing 76 entry points and 0 declared dependencies. Git metadata, file counts, and copied assets provide a stable local audit trail even when engine outputs remain outside the submission bundle. This packaging step converts a diffuse codebase into a citable, inspectable micro-publication suitable for rapid editorial triage and downstream peer review. The capsule does not verify scientific correctness itself; it standardizes what reviewers receive first, and deeper validation still depends on tests and manuscripts.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+How inequitably are clinical trials distributed across Africa relative to its disease burden and population share? We queried the ClinicalTrials.gov API v2 for all registered interventional RCTs from 2000 to 2026 covering Africa, Europe, China, India, and South America. A 57-dimension audit applied economic indices including Gini and Herfindahl, network entropy, Benford digit screening, and methodological rigor lenses to trial metadata across therapeutic areas. The Clinical Coverage Index for mental health was 15.0 (95% CI 12.1 to 18.3) and secondary care delivery reached 48.6, indicating Africa hosts a fraction of the trials its burden warrants. Per-country aggregation revealed that continent-level API queries undercount African trials by approximately twofold compared with summing individual nation results. Multi-dimensional inequity auditing exposes structural gaps in trial distribution invisible to simple count comparisons. The analysis relies on ClinicalTrials.gov metadata only and cannot capture trials registered solely in WHO ICTRP partner registries.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/AfricaRCT
+  Protocol:  https://github.com/mahmood726-cyber/AfricaRCT/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/AfricaRCT/
+
+References (topic pack: CT.gov / ClinicalTrials.gov audit):
+  1. Zarin DA, Tse T, Williams RJ, Rajakannan T. 2017. Update on trial registration 11 years after the ICMJE policy was established. N Engl J Med. 376(4):383-391. doi:10.1056/NEJMsr1601330
+  2. Anderson ML, Chiswell K, Peterson ED, Tasneem A, Topping J, Califf RM. 2015. Compliance with results reporting at ClinicalTrials.gov. N Engl J Med. 372(11):1031-1039. doi:10.1056/NEJMsa1409364
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[6/485] AlMizan
+TITLE: Al-Mizan: An Evidence Equipoise Monitor for Detecting When the Balance of Evidence Has Tipped
+TYPE: methods  |  ESTIMAND: Cumulative Z-statistic crossing Trial Sequential Analysis boundary
+DATA: Three clinical exemplars: corticosteroids in TBI, tranexamic acid, intensive glucose control
+PATH: C:\AlMizan
+
+CURRENT BODY (156 words):
+When has accumulating trial evidence already answered a clinical question, and how many participants were subsequently enrolled after equipoise had ended? We built an evidence equipoise monitor combining cumulative meta-analysis, Trial Sequential Analysis boundaries, leave-one-out fragility checks, and post-tipping waste estimates across three clinical exemplars. Al-Mizan applies O'Brien-Fleming alpha-spending boundaries to the cumulative Z-statistic at each chronological study entry and classifies the evidence state as tipped, trending, or in equipoise. In corticosteroids for traumatic brain injury, the boundary was not crossed before CRASH, which randomised 10,008 patients and shifted the pooled estimate to a risk ratio of 1.05 (95% CI 1.01 to 1.10). Leave-one-out analyses showed that the corticosteroid and tranexamic acid exemplars were not reversed by removal of any single study. Real-time evidence monitoring could reduce avoidable recruitment into trials that continue after the question has been answered. The approach depends on published evidence and cannot account for unpublished negative studies or delayed data release.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+When has accumulating trial evidence already answered a clinical question, and how many participants were subsequently enrolled after equipoise had ended? We built an evidence equipoise monitor combining cumulative meta-analysis, Trial Sequential Analysis boundaries, leave-one-out fragility checks, and post-tipping waste estimates across three examples; al-Mizan applies O'Brien-Fleming alpha-spending boundaries to the cumulative Z-statistic at each chronological study entry. It classifies the evidence state as tipped, trending, or in equipoise, in corticosteroids for traumatic brain injury, the boundary was not crossed before CRASH. This trial which randomised 10,008 patients and shifted the pooled estimate to a risk ratio of 1.05 (95% CI 1.01 to 1.10). Leave-one-out analyses showed that the corticosteroid and tranexamic acid are not reversed by removal of any single study. Real-time evidence monitoring may be able to reduce avoidable recruitment into trials that continue after the question has been answered. The approach however cannot account for unpublished negative studies or delayed data release.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/al-mizan
+  Protocol:  https://github.com/mahmood726-cyber/al-mizan/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/al-mizan/
+
+References (topic pack: trial sequential analysis (TSA)):
+  1. Wetterslev J, Thorlund K, Brok J, Gluud C. 2008. Trial sequential analysis may establish when firm evidence is reached in cumulative meta-analysis. J Clin Epidemiol. 61(1):64-75. doi:10.1016/j.jclinepi.2007.03.013
+  2. Pogue JM, Yusuf S. 1997. Cumulating evidence from randomized trials: utilizing sequential monitoring boundaries for cumulative meta-analysis. Control Clin Trials. 18(6):580-593. doi:10.1016/S0197-2456(97)00051-2
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[7/485] Asa
+TITLE: Asa: A Seven-Method Forensic Data Integrity Screener for Clinical Trial Datasets
+TYPE: methods  |  ESTIMAND: Composite forensic integrity score (0-100)
+DATA: 85 test cases: fabricated, genuine, and boundary-condition datasets
+PATH: C:\Models\Asa
+
+CURRENT BODY (156 words):
+Can statistical forensic methods reliably detect data fabrication in clinical trial datasets through a single accessible browser-based screening tool? We consolidated seven complementary forensic methods into a browser screener validated against 85 test cases covering fabricated, genuine, and boundary-condition datasets. Asa implements Benford’s law, GRIM and GRIMMER granularity tests, SPRITE stochastic reconstruction, terminal digit analysis, variance ratio tests, and Kolmogorov-Smirnov distribution assessment, each producing an independent risk score from zero to one hundred. The composite integrity score achieved sensitivity and specificity of 100 percent (95% CI 95.7 to 100 percent) for fabrication detection across all 85 validation test cases in the suite. Per-study methods identified impossible mean-sample-size combinations in fabricated datasets, while dataset-level methods flagged distributional anomalies across broader study collections. A multi-method forensic approach substantially reduces false accusation risk compared with reliance on any single statistical test. The tool is limited to summary-level data and cannot detect sophisticated fabrication that preserves all tested statistical properties.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Our question was can statistical forensic methods reliably detect data fabrication in clinical trial datasets through A browser-based screening tool? We consolidated seven complementary forensic methods validated against 85 test cases, this covers fabricated, genuine, and boundary-condition datasets. Asa implements Benford’s law, GRIM and GRIMMER granularity tests, SPRITE stochastic reconstruction, terminal digit analysis, variance ratio tests, and Kolmogorov-Smirnov distribution assessment. Each of these produces an independent risk score from zero to one hundred, the composite integrity score achieved sensitivity and specificity of 100 percent (95% CI 95.7 to 100 percent). This is for fabrication detection across all 85 validation test cases in the suite; per-study methods identified impossible mean-sample-size combinations in fabricated datasets; dataset-level methods flagged distributional anomalies across broader study collections. A multi-method forensic approach reduces false accusation risk compared with reliance on any single statistical test. The tool is limited to summary-level data and cannot detect sophisticated fabrication.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Asa
+  Protocol:  https://github.com/mahmood726-cyber/Asa/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/Asa/
+
+References (topic pack: browser-based meta-analysis tooling):
+  1. Schwarzer G, Carpenter JR, Rücker G. 2015. Meta-Analysis with R. Springer. doi:10.1007/978-3-319-21416-0
+  2. Viechtbauer W. 2010. Conducting meta-analyses in R with the metafor package. J Stat Softw. 36(3):1-48. doi:10.18637/jss.v036.i03
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[9/485] AutoGRADE
+TITLE: AutoGRADE: Browser-Based Automated GRADE Certainty Assessment
+TYPE: methods  |  ESTIMAND: Risk ratio
+DATA: 15 published meta-analyses for validation
+PATH: C:\Projects\AutoGRADE
+
+CURRENT BODY (156 words):
+Can a fully offline, single-file browser application produce transparent and reproducible GRADE certainty assessments from meta-analysis results? We built AutoGRADE as a zero-dependency HTML tool accepting input from metafor, RevMan, or manual entry for up to seven clinical outcomes. The tool auto-computes inconsistency and imprecision using heterogeneity statistics and optimal information size, with guided assessments for risk of bias, indirectness, and publication bias. Across 15 published meta-analyses the tool produced risk ratio assessments matching expert GRADE ratings in 93 percent of domain judgments (95% CI 87-97), generating tables in under two minutes. Automated scores agreed with Cochrane GRADEpro ratings across all five domains, with discrepancies only in borderline indirectness where expert judgment inherently varies. Instant transparent GRADE tables without installation or internet lower the barrier for systematic reviewers adopting rigorous certainty assessment in practice. The tool cannot replace expert clinical judgment for indirectness and remains limited to pairwise outcomes without support for network or diagnostic evidence.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can a single-file browser application produce transparent and reproducible GRADE certainty assessments from meta-analysis results? AutoGRADE is a zero-dependency HTML tool accepting input from metafor, RevMan, or manual entry for up to seven clinical outcomes. This auto-computes inconsistency and imprecision using heterogeneity statistics and optimal information size, there are guided assessments for risk of bias, indirectness, and publication bias. Across 15 published meta-analyses the tool produced risk ratio assessments which matched expert GRADE ratings in 93 percent of domain judgments (95% CI 87-97). Automated scores agreed with Cochrane GRADEpro ratings across all five domains (with discrepancies only in borderline indirectness where expert judgment inherently varies). Instant transparent GRADE tables lower the barrier for systematic reviewers adopting rigorous certainty assessment in practice. The tool cannot replace expert clinical judgment for indirectness and remains limited to pairwise outcomes.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/AutoGRADE
+  Protocol:  https://github.com/mahmood726-cyber/AutoGRADE/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/AutoGRADE/
+
+References (topic pack: GRADE / certainty rating):
+  1. Guyatt GH, Oxman AD, Vist GE, et al. 2008. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. BMJ. 336(7650):924-926. doi:10.1136/bmj.39489.470347.AD
+  2. Schünemann HJ, Cuello C, Akl EA, et al. 2019. GRADE guidelines: 18. How ROBINS-I and other tools to assess risk of bias in nonrandomized studies should be used to rate the certainty of a body of evidence. J Clin Epidemiol. 111:105-114. doi:10.1016/j.jclinepi.2018.01.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[10/485] BayesianMA
+TITLE: BayesianMA: Browser-Based Bayesian Random-Effects Meta-Analysis with Prior Sensitivity Analysis
+TYPE: methods  |  ESTIMAND: Posterior mean and 95% credible interval
+DATA: Magnesium-for-MI (8 trials) and Aspirin-for-stroke (6 trials) datasets
+PATH: C:\Models\BayesianMA
+
+CURRENT BODY (156 words):
+Can Bayesian random-effects meta-analysis with prior sensitivity analysis be performed entirely in a browser without requiring R, Stan, or specialized installation? The tool implements a normal-normal hierarchical model and was validated on two canonical datasets: eight magnesium-for-MI trials and six aspirin-for-stroke-prevention trials. Posterior computation uses grid approximation over a 200-by-200 mu-tau grid with a normal prior for the grand mean and half-Cauchy prior for heterogeneity. For the magnesium dataset the posterior log-OR mean was -0.53 (95% credible interval -1.27 to 0.13) under a weakly informative prior with half-Cauchy 0.5. Sensitivity analysis across vague, weakly informative, and skeptical priors showed that posterior means varied by less than 0.15 while credible interval widths changed by up to 40%. The tool enables clinicians to quantify the influence of prior assumptions on pooled conclusions through direct probability statements rather than p-values. Grid approximation is limited to two-parameter models and may not scale to complex hierarchical structures with additional random-effect layers.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can Bayesian random-effects meta-analysis with prior sensitivity analysis be done in a browser without requiring R, Stan, or specialized installation? This tool implements a normal-normal hierarchical model, it was validated on two canonical datasets: eight magnesium-for-MI trials and six aspirin-for-stroke-prevention trials. The Posterior computation uses grid approximation over a 200-by-200 mu-tau grid with a normal prior for the grand mean and half-Cauchy prior for heterogeneity. Using the magnesium dataset the posterior log-OR mean was -0.53 (95% credible interval -1.27 to 0.13) under a weakly informative prior with half-Cauchy 0.5. Our Sensitivity analysis across vague, weakly informative, and skeptical priors showed that posterior means varied by less than 0.15 (while credible interval widths changed by up to 40%). The tool enables clinicians to quantify the influence of prior assumptions on pooled conclusions, this is through direct probability statements rather than p-values. Grid approximation, however, is limited to two-parameter models and may not scale to complex hierarchical structures.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BayesianMA
+  Protocol:  https://github.com/mahmood726-cyber/BayesianMA/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BayesianMA/
+
+References (topic pack: Bayesian meta-analysis):
+  1. Röver C. 2020. Bayesian random-effects meta-analysis using the bayesmeta R package. J Stat Softw. 93(6):1-51. doi:10.18637/jss.v093.i06
+  2. Higgins JPT, Thompson SG, Spiegelhalter DJ. 2009. A re-evaluation of random-effects meta-analysis. J R Stat Soc A. 172(1):137-159. doi:10.1111/j.1467-985X.2008.00552.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[11/485] BenfordMA
+TITLE: Benford Screening of 1.2 Million Meta-Analytic Values Finds No Corpus-Level Digit Anomaly
+TYPE: methods  |  ESTIMAND: Mean absolute deviation (MAD)
+DATA: Pairwise70 specification-level data (403 reviews, 1.18M values)
+PATH: C:\BenfordMA
+
+CURRENT BODY (156 words):
+Do the numerical outputs of large-scale meta-analytic workflows follow the digit patterns expected under Benford's law, or do they show overall corpus-level anomalies that might suggest data integrity concerns? We extracted first and second significant digits from 1,175,056 values across six numeric fields in 403 Cochrane review specifications from the Pairwise70 corpus. Digit frequencies were compared with Benford expectations using mean absolute deviation, chi-squared goodness-of-fit testing, and mantissa arc uniformity analysis applied to each field separately. The corpus-level first-digit mean absolute deviation was 0.013 (95% CI 0.011 to 0.015), remaining within accepted conformity thresholds despite the very large sample size. Sensitivity analyses across numeric fields and review subgroups showed consistent conformity, and no single review exceeded the critical non-conformance threshold after Bonferroni correction. At corpus level, these Cochrane outputs do not show digit anomalies suggesting systematic fabrication or major computational distortion. Benford screening remains indirect and cannot detect fabrication strategies that deliberately preserve expected digit frequencies.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Do the numerical outputs of large-scale meta-analytic workflows follow digit patterns expected under Benford's law. Do they show overall corpus-level anomalies that might suggest data integrity concerns? We extracted the first and second significant digits from 1,175,056 values across six numeric fields in 403 Cochrane review specifications (from the Pairwise70 corpus). Digit frequencies were compared with Benford expectations using mean absolute deviation. chi-squared goodness-of-fit testing, and mantissa arc uniformity analysis applied to each field separately. The corpus-level first-digit mean absolute deviation was 0.013 (95% CI 0.011 to 0.015), this remained within accepted conformity thresholds despite the large sample size; sensitivity analyses across numeric fields and review subgroups showed consistent conformity. No single review exceeded the critical non-conformance threshold after Bonferroni correction, these Cochrane outputs do not show digit anomalies suggesting systematic fabrication. Benford screening remains indirect and cannot detect all fabrication strategies.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BenfordMA
+  Protocol:  https://github.com/mahmood726-cyber/BenfordMA/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BenfordMA/
+
+References (topic pack: heterogeneity / prediction interval):
+  1. Higgins JPT, Thompson SG. 2002. Quantifying heterogeneity in a meta-analysis. Stat Med. 21(11):1539-1558. doi:10.1002/sim.1186
+  2. IntHout J, Ioannidis JP, Rovers MM, Goeman JJ. 2016. Plea for routinely presenting prediction intervals in meta-analysis. BMJ Open. 6(7):e010247. doi:10.1136/bmjopen-2015-010247
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[12/485] BiasForensics
+TITLE: The Bias Fingerprint: Eight Methods Disagree in One of Seven Cochrane Meta-Analyses
+TYPE: methods  |  ESTIMAND: Discordance rate
+DATA: Pairwise70 dataset (307 Cochrane reviews, k>=5)
+PATH: C:\BiasForensics
+
+CURRENT BODY (156 words):
+When eight publication-bias methods are applied to the same meta-analysis, how often do they reach the same conclusion? We applied four detection tests and four correction methods to 307 Cochrane reviews with at least five studies from the Pairwise70 dataset. Each review received a bias fingerprint summarising which tests flagged bias and how corrections shifted the pooled estimate, classified as Clean, Suspected, Confirmed, or Discordant. Only 54 reviews (17.6%) were Clean while 42 were Discordant, giving a discordance rate of 13.7% and a median risk-ratio shift below 0.05 (95% CI 0.02 to 0.08). Agreement ranged from 98% between PET-PEESE and limit meta-analysis to 73% between trim-and-fill and regression corrections, with mean relative effect shift of 1.01. In roughly one in seven Cochrane reviews, the apparent direction of the pooled conclusion depends on which bias method is chosen. These methods detect statistical asymmetry rather than bias itself and cannot separate publication bias from clinical or methodological heterogeneity.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+When eight publication-bias methods are applied to the same meta-analysis, do they reach the same conclusion? We applied four detection tests and four correction methods to 307 Cochrane reviews with at least five studies from the Pairwise70 dataset. Each review then received a bias fingerprint summarising which tests flagged bias and how corrections shifted the pooled estimate - classified as Clean, Suspected, Confirmed, or Discordant. Only 54 reviews (17.6%) were Clean but 42 were Discordant, this gave a discordance rate of 13.7% and a median risk-ratio shift below 0.05 (95% CI 0.02 to 0.08). Agreement ranged widely from 98% between PET-PEESE and limit meta-analysis to 73% between trim-and-fill and regression corrections, the mean relative effect shift was 1.01. In roughly one in seven reviews, the direction of the pooled conclusion depends on which bias method is chosen. These methods detect statistical asymmetry rather than bias itself not clinical or methodological heterogeneity.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BiasForensics
+  Protocol:  https://github.com/mahmood726-cyber/BiasForensics/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BiasForensics/
+
+References (topic pack: publication bias / selection):
+  1. Egger M, Davey Smith G, Schneider M, Minder C. 1997. Bias in meta-analysis detected by a simple, graphical test. BMJ. 315(7109):629-634. doi:10.1136/bmj.315.7109.629
+  2. Duval S, Tweedie R. 2000. Trim and fill: a simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics. 56(2):455-463. doi:10.1111/j.0006-341X.2000.00455.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[13/485] Burhan
+TITLE: TruthCert: A Fail-Closed Certification Protocol for LLM Outputs in Evidence Synthesis. 7 sentences, 156 words. Targeting Synthēsis journal.">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 2rem 1rem; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; line-height: 1.6; color: #1a1a1a; background: #fafafa; max-width: 720px; margin: 0 auto; }
+  .mark { color: #6b46c1; font-weight: 600; letter-spacing: 0.02em; }
+  h1 { font-size: 1.4rem; line-height: 1.3; margin: 0 0 0.5rem; }
+  .sub { color: #6b7280; font-size: 0.9rem; margin-bottom: 1.5rem; }
+  .body { background: white; padding: 1.5rem; border-radius: 8px; border: 1px solid #e5e7eb; margin-bottom: 1.5rem; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
+  .links { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 0.5rem; margin-bottom: 1.5rem; }
+  .links a { display: block; padding: 0.75rem 1rem; background: white; border: 1px solid #e5e7eb; border-radius: 6px; color: #3730a3; text-decoration: none; font-size: 0.9rem; }
+  .links a:hover { background: #f3f4f6; border-color: #c7d2fe; }
+  .meta { font-size: 0.85rem; color: #4b5563; background: #f9fafb; padding: 1rem; border-radius: 6px; border: 1px solid #e5e7eb; }
+  .meta dt { font-weight: 600; margin-top: 0.4rem; }
+  footer { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid #e5e7eb; color: #9ca3af; font-size: 0.8rem; text-align: center; }
+</style>
+</head>
+<body>
+
+<p class="mark">◆ Synthēsis · Methods Note</p>
+<h1>AfricaRCT Observatory: Multi-Dimensional Inequity Audit of African Clinical Trial Distribution
+TYPE: methods  |  ESTIMAND: Clinical Coverage Index
+DATA: ClinicalTrials.gov API v2, interventional RCTs 2000-2026, Africa/Europe/China/India/South America
+PATH: C:\AfricaRCT
+
+CURRENT BODY (156 words):
+Can a reproducibility capsule turn an evidence-synthesis repository into a reviewer-auditable submission without restaging the workflow? We audited the shipped project using 271 source files, 0 test files, 74 manuscript or guide files, and 136 dashboard or figure assets committed locally. The capsule packages a micro-paper, a machine-readable config, an interactive reader, and a protocol so the repository can be inspected across reviewers. Across the inventory, the repository yields a documentation proportion of 0.15, with file-count range 0-271 across core surfaces, while exposing 76 entry points and 0 declared dependencies. Git metadata, file counts, and copied assets provide a stable local audit trail even when engine outputs remain outside the submission bundle. This packaging step converts a diffuse codebase into a citable, inspectable micro-publication suitable for rapid editorial triage and downstream peer review. The capsule does not verify scientific correctness itself; it standardizes what reviewers receive first, and deeper validation still depends on tests and manuscripts.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+How inequitably are clinical trials distributed across Africa relative to its disease burden and population share? We queried the ClinicalTrials.gov API v2 for all registered interventional RCTs from 2000 to 2026 covering Africa, Europe, China, India, and South America. A 57-dimension audit applied economic indices including Gini and Herfindahl, network entropy, Benford digit screening, and methodological rigor lenses to trial metadata across therapeutic areas. The Clinical Coverage Index for mental health was 15.0 (95% CI 12.1 to 18.3) and secondary care delivery reached 48.6, indicating Africa hosts a fraction of the trials its burden warrants. Per-country aggregation revealed that continent-level API queries undercount African trials by approximately twofold compared with summing individual nation results. Multi-dimensional inequity auditing exposes structural gaps in trial distribution invisible to simple count comparisons. The analysis relies on ClinicalTrials.gov metadata only and cannot capture trials registered solely in WHO ICTRP partner registries.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/AfricaRCT
+  Protocol:  https://github.com/mahmood726-cyber/AfricaRCT/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/AfricaRCT/
+
+References (topic pack: CT.gov / ClinicalTrials.gov audit):
+  1. Zarin DA, Tse T, Williams RJ, Rajakannan T. 2017. Update on trial registration 11 years after the ICMJE policy was established. N Engl J Med. 376(4):383-391. doi:10.1056/NEJMsr1601330
+  2. Anderson ML, Chiswell K, Peterson ED, Tasneem A, Topping J, Califf RM. 2015. Compliance with results reporting at ClinicalTrials.gov. N Engl J Med. 372(11):1031-1039. doi:10.1056/NEJMsa1409364
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[6/485] AlMizan
+TITLE: Al-Mizan: An Evidence Equipoise Monitor for Detecting When the Balance of Evidence Has Tipped
+TYPE: methods  |  ESTIMAND: Cumulative Z-statistic crossing Trial Sequential Analysis boundary
+DATA: Three clinical exemplars: corticosteroids in TBI, tranexamic acid, intensive glucose control
+PATH: C:\AlMizan
+
+CURRENT BODY (156 words):
+When has accumulating trial evidence already answered a clinical question, and how many participants were subsequently enrolled after equipoise had ended? We built an evidence equipoise monitor combining cumulative meta-analysis, Trial Sequential Analysis boundaries, leave-one-out fragility checks, and post-tipping waste estimates across three clinical exemplars. Al-Mizan applies O'Brien-Fleming alpha-spending boundaries to the cumulative Z-statistic at each chronological study entry and classifies the evidence state as tipped, trending, or in equipoise. In corticosteroids for traumatic brain injury, the boundary was not crossed before CRASH, which randomised 10,008 patients and shifted the pooled estimate to a risk ratio of 1.05 (95% CI 1.01 to 1.10). Leave-one-out analyses showed that the corticosteroid and tranexamic acid exemplars were not reversed by removal of any single study. Real-time evidence monitoring could reduce avoidable recruitment into trials that continue after the question has been answered. The approach depends on published evidence and cannot account for unpublished negative studies or delayed data release.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+When has accumulating trial evidence already answered a clinical question, and how many participants were subsequently enrolled after equipoise had ended? We built an evidence equipoise monitor combining cumulative meta-analysis, Trial Sequential Analysis boundaries, leave-one-out fragility checks, and post-tipping waste estimates across three examples; al-Mizan applies O'Brien-Fleming alpha-spending boundaries to the cumulative Z-statistic at each chronological study entry. It classifies the evidence state as tipped, trending, or in equipoise, in corticosteroids for traumatic brain injury, the boundary was not crossed before CRASH. This trial which randomised 10,008 patients and shifted the pooled estimate to a risk ratio of 1.05 (95% CI 1.01 to 1.10). Leave-one-out analyses showed that the corticosteroid and tranexamic acid are not reversed by removal of any single study. Real-time evidence monitoring may be able to reduce avoidable recruitment into trials that continue after the question has been answered. The approach however cannot account for unpublished negative studies or delayed data release.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/al-mizan
+  Protocol:  https://github.com/mahmood726-cyber/al-mizan/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/al-mizan/
+
+References (topic pack: trial sequential analysis (TSA)):
+  1. Wetterslev J, Thorlund K, Brok J, Gluud C. 2008. Trial sequential analysis may establish when firm evidence is reached in cumulative meta-analysis. J Clin Epidemiol. 61(1):64-75. doi:10.1016/j.jclinepi.2007.03.013
+  2. Pogue JM, Yusuf S. 1997. Cumulating evidence from randomized trials: utilizing sequential monitoring boundaries for cumulative meta-analysis. Control Clin Trials. 18(6):580-593. doi:10.1016/S0197-2456(97)00051-2
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[7/485] Asa
+TITLE: Asa: A Seven-Method Forensic Data Integrity Screener for Clinical Trial Datasets
+TYPE: methods  |  ESTIMAND: Composite forensic integrity score (0-100)
+DATA: 85 test cases: fabricated, genuine, and boundary-condition datasets
+PATH: C:\Models\Asa
+
+CURRENT BODY (156 words):
+Can statistical forensic methods reliably detect data fabrication in clinical trial datasets through a single accessible browser-based screening tool? We consolidated seven complementary forensic methods into a browser screener validated against 85 test cases covering fabricated, genuine, and boundary-condition datasets. Asa implements Benford’s law, GRIM and GRIMMER granularity tests, SPRITE stochastic reconstruction, terminal digit analysis, variance ratio tests, and Kolmogorov-Smirnov distribution assessment, each producing an independent risk score from zero to one hundred. The composite integrity score achieved sensitivity and specificity of 100 percent (95% CI 95.7 to 100 percent) for fabrication detection across all 85 validation test cases in the suite. Per-study methods identified impossible mean-sample-size combinations in fabricated datasets, while dataset-level methods flagged distributional anomalies across broader study collections. A multi-method forensic approach substantially reduces false accusation risk compared with reliance on any single statistical test. The tool is limited to summary-level data and cannot detect sophisticated fabrication that preserves all tested statistical properties.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Our question was can statistical forensic methods reliably detect data fabrication in clinical trial datasets through A browser-based screening tool? We consolidated seven complementary forensic methods validated against 85 test cases, this covers fabricated, genuine, and boundary-condition datasets. Asa implements Benford’s law, GRIM and GRIMMER granularity tests, SPRITE stochastic reconstruction, terminal digit analysis, variance ratio tests, and Kolmogorov-Smirnov distribution assessment. Each of these produces an independent risk score from zero to one hundred, the composite integrity score achieved sensitivity and specificity of 100 percent (95% CI 95.7 to 100 percent). This is for fabrication detection across all 85 validation test cases in the suite; per-study methods identified impossible mean-sample-size combinations in fabricated datasets; dataset-level methods flagged distributional anomalies across broader study collections. A multi-method forensic approach reduces false accusation risk compared with reliance on any single statistical test. The tool is limited to summary-level data and cannot detect sophisticated fabrication.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/Asa
+  Protocol:  https://github.com/mahmood726-cyber/Asa/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/Asa/
+
+References (topic pack: browser-based meta-analysis tooling):
+  1. Schwarzer G, Carpenter JR, Rücker G. 2015. Meta-Analysis with R. Springer. doi:10.1007/978-3-319-21416-0
+  2. Viechtbauer W. 2010. Conducting meta-analyses in R with the metafor package. J Stat Softw. 36(3):1-48. doi:10.18637/jss.v036.i03
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[9/485] AutoGRADE
+TITLE: AutoGRADE: Browser-Based Automated GRADE Certainty Assessment
+TYPE: methods  |  ESTIMAND: Risk ratio
+DATA: 15 published meta-analyses for validation
+PATH: C:\Projects\AutoGRADE
+
+CURRENT BODY (156 words):
+Can a fully offline, single-file browser application produce transparent and reproducible GRADE certainty assessments from meta-analysis results? We built AutoGRADE as a zero-dependency HTML tool accepting input from metafor, RevMan, or manual entry for up to seven clinical outcomes. The tool auto-computes inconsistency and imprecision using heterogeneity statistics and optimal information size, with guided assessments for risk of bias, indirectness, and publication bias. Across 15 published meta-analyses the tool produced risk ratio assessments matching expert GRADE ratings in 93 percent of domain judgments (95% CI 87-97), generating tables in under two minutes. Automated scores agreed with Cochrane GRADEpro ratings across all five domains, with discrepancies only in borderline indirectness where expert judgment inherently varies. Instant transparent GRADE tables without installation or internet lower the barrier for systematic reviewers adopting rigorous certainty assessment in practice. The tool cannot replace expert clinical judgment for indirectness and remains limited to pairwise outcomes without support for network or diagnostic evidence.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can a single-file browser application produce transparent and reproducible GRADE certainty assessments from meta-analysis results? AutoGRADE is a zero-dependency HTML tool accepting input from metafor, RevMan, or manual entry for up to seven clinical outcomes. This auto-computes inconsistency and imprecision using heterogeneity statistics and optimal information size, there are guided assessments for risk of bias, indirectness, and publication bias. Across 15 published meta-analyses the tool produced risk ratio assessments which matched expert GRADE ratings in 93 percent of domain judgments (95% CI 87-97). Automated scores agreed with Cochrane GRADEpro ratings across all five domains (with discrepancies only in borderline indirectness where expert judgment inherently varies). Instant transparent GRADE tables lower the barrier for systematic reviewers adopting rigorous certainty assessment in practice. The tool cannot replace expert clinical judgment for indirectness and remains limited to pairwise outcomes.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/AutoGRADE
+  Protocol:  https://github.com/mahmood726-cyber/AutoGRADE/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/AutoGRADE/
+
+References (topic pack: GRADE / certainty rating):
+  1. Guyatt GH, Oxman AD, Vist GE, et al. 2008. GRADE: an emerging consensus on rating quality of evidence and strength of recommendations. BMJ. 336(7650):924-926. doi:10.1136/bmj.39489.470347.AD
+  2. Schünemann HJ, Cuello C, Akl EA, et al. 2019. GRADE guidelines: 18. How ROBINS-I and other tools to assess risk of bias in nonrandomized studies should be used to rate the certainty of a body of evidence. J Clin Epidemiol. 111:105-114. doi:10.1016/j.jclinepi.2018.01.012
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[10/485] BayesianMA
+TITLE: BayesianMA: Browser-Based Bayesian Random-Effects Meta-Analysis with Prior Sensitivity Analysis
+TYPE: methods  |  ESTIMAND: Posterior mean and 95% credible interval
+DATA: Magnesium-for-MI (8 trials) and Aspirin-for-stroke (6 trials) datasets
+PATH: C:\Models\BayesianMA
+
+CURRENT BODY (156 words):
+Can Bayesian random-effects meta-analysis with prior sensitivity analysis be performed entirely in a browser without requiring R, Stan, or specialized installation? The tool implements a normal-normal hierarchical model and was validated on two canonical datasets: eight magnesium-for-MI trials and six aspirin-for-stroke-prevention trials. Posterior computation uses grid approximation over a 200-by-200 mu-tau grid with a normal prior for the grand mean and half-Cauchy prior for heterogeneity. For the magnesium dataset the posterior log-OR mean was -0.53 (95% credible interval -1.27 to 0.13) under a weakly informative prior with half-Cauchy 0.5. Sensitivity analysis across vague, weakly informative, and skeptical priors showed that posterior means varied by less than 0.15 while credible interval widths changed by up to 40%. The tool enables clinicians to quantify the influence of prior assumptions on pooled conclusions through direct probability statements rather than p-values. Grid approximation is limited to two-parameter models and may not scale to complex hierarchical structures with additional random-effect layers.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Can Bayesian random-effects meta-analysis with prior sensitivity analysis be done in a browser without requiring R, Stan, or specialized installation? This tool implements a normal-normal hierarchical model, it was validated on two canonical datasets: eight magnesium-for-MI trials and six aspirin-for-stroke-prevention trials. The Posterior computation uses grid approximation over a 200-by-200 mu-tau grid with a normal prior for the grand mean and half-Cauchy prior for heterogeneity. Using the magnesium dataset the posterior log-OR mean was -0.53 (95% credible interval -1.27 to 0.13) under a weakly informative prior with half-Cauchy 0.5. Our Sensitivity analysis across vague, weakly informative, and skeptical priors showed that posterior means varied by less than 0.15 (while credible interval widths changed by up to 40%). The tool enables clinicians to quantify the influence of prior assumptions on pooled conclusions, this is through direct probability statements rather than p-values. Grid approximation, however, is limited to two-parameter models and may not scale to complex hierarchical structures.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BayesianMA
+  Protocol:  https://github.com/mahmood726-cyber/BayesianMA/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BayesianMA/
+
+References (topic pack: Bayesian meta-analysis):
+  1. Röver C. 2020. Bayesian random-effects meta-analysis using the bayesmeta R package. J Stat Softw. 93(6):1-51. doi:10.18637/jss.v093.i06
+  2. Higgins JPT, Thompson SG, Spiegelhalter DJ. 2009. A re-evaluation of random-effects meta-analysis. J R Stat Soc A. 172(1):137-159. doi:10.1111/j.1467-985X.2008.00552.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[11/485] BenfordMA
+TITLE: Benford Screening of 1.2 Million Meta-Analytic Values Finds No Corpus-Level Digit Anomaly
+TYPE: methods  |  ESTIMAND: Mean absolute deviation (MAD)
+DATA: Pairwise70 specification-level data (403 reviews, 1.18M values)
+PATH: C:\BenfordMA
+
+CURRENT BODY (156 words):
+Do the numerical outputs of large-scale meta-analytic workflows follow the digit patterns expected under Benford's law, or do they show overall corpus-level anomalies that might suggest data integrity concerns? We extracted first and second significant digits from 1,175,056 values across six numeric fields in 403 Cochrane review specifications from the Pairwise70 corpus. Digit frequencies were compared with Benford expectations using mean absolute deviation, chi-squared goodness-of-fit testing, and mantissa arc uniformity analysis applied to each field separately. The corpus-level first-digit mean absolute deviation was 0.013 (95% CI 0.011 to 0.015), remaining within accepted conformity thresholds despite the very large sample size. Sensitivity analyses across numeric fields and review subgroups showed consistent conformity, and no single review exceeded the critical non-conformance threshold after Bonferroni correction. At corpus level, these Cochrane outputs do not show digit anomalies suggesting systematic fabrication or major computational distortion. Benford screening remains indirect and cannot detect fabrication strategies that deliberately preserve expected digit frequencies.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+Do the numerical outputs of large-scale meta-analytic workflows follow digit patterns expected under Benford's law. Do they show overall corpus-level anomalies that might suggest data integrity concerns? We extracted the first and second significant digits from 1,175,056 values across six numeric fields in 403 Cochrane review specifications (from the Pairwise70 corpus). Digit frequencies were compared with Benford expectations using mean absolute deviation. chi-squared goodness-of-fit testing, and mantissa arc uniformity analysis applied to each field separately. The corpus-level first-digit mean absolute deviation was 0.013 (95% CI 0.011 to 0.015), this remained within accepted conformity thresholds despite the large sample size; sensitivity analyses across numeric fields and review subgroups showed consistent conformity. No single review exceeded the critical non-conformance threshold after Bonferroni correction, these Cochrane outputs do not show digit anomalies suggesting systematic fabrication. Benford screening remains indirect and cannot detect all fabrication strategies.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BenfordMA
+  Protocol:  https://github.com/mahmood726-cyber/BenfordMA/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BenfordMA/
+
+References (topic pack: heterogeneity / prediction interval):
+  1. Higgins JPT, Thompson SG. 2002. Quantifying heterogeneity in a meta-analysis. Stat Med. 21(11):1539-1558. doi:10.1002/sim.1186
+  2. IntHout J, Ioannidis JP, Rovers MM, Goeman JJ. 2016. Plea for routinely presenting prediction intervals in meta-analysis. BMJ Open. 6(7):e010247. doi:10.1136/bmjopen-2015-010247
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[12/485] BiasForensics
+TITLE: The Bias Fingerprint: Eight Methods Disagree in One of Seven Cochrane Meta-Analyses
+TYPE: methods  |  ESTIMAND: Discordance rate
+DATA: Pairwise70 dataset (307 Cochrane reviews, k>=5)
+PATH: C:\BiasForensics
+
+CURRENT BODY (156 words):
+When eight publication-bias methods are applied to the same meta-analysis, how often do they reach the same conclusion? We applied four detection tests and four correction methods to 307 Cochrane reviews with at least five studies from the Pairwise70 dataset. Each review received a bias fingerprint summarising which tests flagged bias and how corrections shifted the pooled estimate, classified as Clean, Suspected, Confirmed, or Discordant. Only 54 reviews (17.6%) were Clean while 42 were Discordant, giving a discordance rate of 13.7% and a median risk-ratio shift below 0.05 (95% CI 0.02 to 0.08). Agreement ranged from 98% between PET-PEESE and limit meta-analysis to 73% between trim-and-fill and regression corrections, with mean relative effect shift of 1.01. In roughly one in seven Cochrane reviews, the apparent direction of the pooled conclusion depends on which bias method is chosen. These methods detect statistical asymmetry rather than bias itself and cannot separate publication bias from clinical or methodological heterogeneity.
+
+YOUR REWRITE (at most 156 words, 7 sentences):
+
+When eight publication-bias methods are applied to the same meta-analysis, do they reach the same conclusion? We applied four detection tests and four correction methods to 307 Cochrane reviews with at least five studies from the Pairwise70 dataset. Each review then received a bias fingerprint summarising which tests flagged bias and how corrections shifted the pooled estimate - classified as Clean, Suspected, Confirmed, or Discordant. Only 54 reviews (17.6%) were Clean but 42 were Discordant, this gave a discordance rate of 13.7% and a median risk-ratio shift below 0.05 (95% CI 0.02 to 0.08). Agreement ranged widely from 98% between PET-PEESE and limit meta-analysis to 73% between trim-and-fill and regression corrections, the mean relative effect shift was 1.01. In roughly one in seven reviews, the direction of the pooled conclusion depends on which bias method is chosen. These methods detect statistical asymmetry rather than bias itself not clinical or methodological heterogeneity.
+
+SUBMISSION METADATA:
+
+Corresponding author: Mahmood Ahmad <mahmood.ahmad2@nhs.net>
+ORCID: 0000-0001-9107-3704
+Affiliation: Tahir Heart Institute, Rabwah, Pakistan
+
+Links:
+  Code:      https://github.com/mahmood726-cyber/BiasForensics
+  Protocol:  https://github.com/mahmood726-cyber/BiasForensics/blob/main/E156-PROTOCOL.md
+  Dashboard: https://mahmood726-cyber.github.io/BiasForensics/
+
+References (topic pack: publication bias / selection):
+  1. Egger M, Davey Smith G, Schneider M, Minder C. 1997. Bias in meta-analysis detected by a simple, graphical test. BMJ. 315(7109):629-634. doi:10.1136/bmj.315.7109.629
+  2. Duval S, Tweedie R. 2000. Trim and fill: a simple funnel-plot-based method of testing and adjusting for publication bias in meta-analysis. Biometrics. 56(2):455-463. doi:10.1111/j.0006-341X.2000.00455.x
+
+Data availability: No patient-level data used. Analysis derived exclusively
+  from publicly available aggregate records. All source identifiers are in
+  the protocol document linked above.
+
+Ethics: Not required. Study uses only publicly available aggregate data; no
+  human participants; no patient-identifiable information; no individual-
+  participant data. No institutional review board approval sought or required
+  under standard research-ethics guidelines for secondary methodological
+  research on published literature.
+
+Funding: None.
+
+Competing interests: MA serves on the editorial board of Synthēsis (the
+  target journal); MA had no role in editorial decisions on this
+  manuscript, which was handled by an independent editor of the journal.
+
+Author contributions (CRediT):
+  [STUDENT REWRITER, first author] — Writing – original draft, Writing –
+    review & editing, Validation.
+  [SUPERVISING FACULTY, last/senior author] — Supervision, Validation,
+    Writing – review & editing.
+  Mahmood Ahmad (middle author, NOT first or last) — Conceptualization,
+    Methodology, Software, Data curation, Formal analysis, Resources.
+
+AI disclosure: Computational tooling (including AI-assisted coding via
+  Claude Code [Anthropic]) was used to develop analysis scripts and assist
+  with data extraction. The final manuscript was human-written, reviewed,
+  and approved by the author; the submitted text is not AI-generated. All
+  quantitative claims were verified against source data; cross-validation
+  was performed where applicable. The author retains full responsibility for
+  the final content.
+
+Preprint: Not preprinted.
+
+Reporting checklist: PRISMA 2020 (methods-paper variant — reports on review corpus).
+
+Target journal: ◆ Synthēsis (https://www.synthesis-medicine.org/index.php/journal)
+  Section: Methods Note — submit the 156-word E156 body verbatim as the main text.
+  The journal caps main text at ≤400 words; E156's 156-word, 7-sentence
+  contract sits well inside that ceiling. Do NOT pad to 400 — the
+  micro-paper length is the point of the format.
+
+Manuscript license: CC-BY-4.0.
+Code license: MIT.
+
+SUBMITTED: [ ]
+
+======================================================================
+
+[13/485] Burhan
+TITLE: TruthCert: A Fail-Closed Certification Protocol for LLM Outputs in Evidence Synthesis</h1>
+<p class="sub">Project: <code>AfricaRCT</code> · Type: methods · Estimand: AUC</p>
+
+<div class="body">
+<p>Can a fail-closed certification protocol prevent silently incorrect LLM outputs from entering high-stakes evidence synthesis workflows? We designed TruthCert as a versioned standard requiring scope-locked estimands, per-value provenance chains, multi-witness arbitration, and immutable bundle hashing. The protocol assembles at least three independent witnesses per atomic claim, applies domain-specific validator packs across 12 extension domains, and rejects outputs with insufficient evidence. Against 50 simulated RCT extraction tasks, TruthCert rejected all 18 corrupted bundles while certifying 30 of 32 valid ones, yielding an AUC of 0.97 (95% CI 0.93-0.99) for certification accuracy. Adversarial injection of arm-swap errors, unit mismatches, and citation drift was detected in every case, with zero false certifications across all tested corruption types. Structured fail-closed verification transforms the LLM accuracy problem from trusting model confidence into auditing evidence completeness with mandatory disclosure. The protocol does not extend to free-text clinical interpretation, and validator threshold calibration may not generalize across medical specialties without domain expert tuning.</p>
+</div>
+
+<div class="links">
+  <a href="https://github.com/mahmood726-cyber/AfricaRCT">▶ Source code</a>
+  <a href="https://github.com/mahmood726-cyber/AfricaRCT/blob/main/E156-PROTOCOL.md">📄 E156 protocol</a>
+  <a href="https://mahmood726-cyber.github.io/e156/students.html" target="_blank">🎓 Claim this paper</a>
+  <a href="https://www.synthesis-medicine.org/index.php/journal" target="_blank">📖 Journal</a>
+</div>
+
+<div class="meta">
+<dt>Target journal</dt>
+<dd>◆ Synthēsis (synthesis-medicine.org) — section: Methods Note</dd>
+<dt>Format</dt>
+<dd>E156: 7 sentences, ≤156 words, single paragraph</dd>
+<dt>License</dt>
+<dd>Manuscript: CC-BY-4.0 · Code: MIT</dd>
+<dt>Status</dt>
+<dd>Open — claim on the student board</dd>
+</div>
+
+<footer>
+  Generated for the E156 student claim board. Discover more at
+  <a href="https://mahmood726-cyber.github.io/e156/students.html">mahmood726-cyber.github.io/e156/students.html</a>.
+</footer>
+
+</body>
+</html>
